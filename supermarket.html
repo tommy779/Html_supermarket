@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
- <head>
-     <meta charset="utf-8"    />
+<html><head>
+     <meta charset="utf-8">
      <title>European Supermarket</title>
      <link rel="stylesheet" href="stylesheet.css">
  </head>
  <body>
-     <div class="topnav">
+     <div id="nav1" class="topnav">
         <a class="active" href="#home">Home</a>
         <a href="#news">News</a>
         <a href="#contact">Contact</a>
@@ -15,21 +14,21 @@
      
     <section>
         
-    <h1>Fresh Market</h1>        
-    <dl>
-        <dt>Origin of the fruits in our market</dt>
-        <dd>Belgium</dd>
-        <dt>Origin of the vegetables in our market</dt>
-        <dd>Germany</dd>
+    <h1 id="firstheading">Fresh Market</h1>        
+    <dl id="firstdl">
+        <dt id="firstdt">Origin of the fruits in our market</dt>
+        <dd id="belg">Belgium</dd>
+        <dt id="seconddt">Origin of the vegetables in our market</dt>
+        <dd id="germn">Germany</dd>
     </dl>
         
-    <h3>Our Products</h3>    
+    <h3 id="OurProducts">Our Products</h3>    
     
      </section>
     <section>
     <table>
-        <caption>Product Details</caption>
-        <tr>
+        <caption id="cap">Product Details</caption>
+        <tbody><tr id="firstTR">
             <th>Product</th>    
             <th>Origin</th>  
             <th>Best_Before_Day</th>  
@@ -38,7 +37,7 @@
             
         </tr>   
     
-        <tr>
+        <tr id="secondTR">
             <td>Green Apple</td>    
             <td>Belgium</td>  
             <td>20.02.2021</td>  
@@ -46,12 +45,12 @@
             <td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Apples.jpg/512px-Apples.jpg" target="_blank"> Click to view the image</a></td>  
             
         </tr>
-        <tr>
+        <tr id="thirdTR">
             <td>Orange</td>    
             <td>Germany</td>  
             <td>17.05.2021</td>  
             <td>10kg</td>  
-            <td><a  href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Ab_plant_370.jpg/120px-Ab_plant_370.jpg" target="_blank">Click to view the image</a></td>          
+            <td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Ab_plant_370.jpg/120px-Ab_plant_370.jpg" target="_blank">Click to view the image</a></td>          
             
         </tr>
         <tr>
@@ -59,30 +58,30 @@
             <td>Belgium</td>  
             <td>15.04.2023</td>  
             <td>140kg</td>  
-            <td><a  href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Red_onion_centered.jpg/120px-Red_onion_centered.jpg" target="_blank"> Click to view the image</a></td>  
+            <td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Red_onion_centered.jpg/120px-Red_onion_centered.jpg" target="_blank"> Click to view the image</a></td>  
             
         </tr>
-        <tr>
+        <tr id="fourthTH">
             <td>Banana</td>    
             <td>Belgium</td>  
             <td>27.06.2022</td>  
             <td>140kg</td>  
-            <td><a  href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Banana_%28white_background%29_smn.jpg/120px-Banana_%28white_background%29_smn.jpg" target="_blank">Click to view the image</a></td>  
+            <td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Banana_%28white_background%29_smn.jpg/120px-Banana_%28white_background%29_smn.jpg" target="_blank">Click to view the image</a></td>  
             
         </tr>
     
-        </table>
+        </tbody></table>
         
-        <form action="https://wt.ops.labs.vu.nl/api21/14a10f8d" method="post"><input type="text" id="product" name="product" >  
+        <form action="https://wt.ops.labs.vu.nl/api21/14a10f8d" method="post"><input type="text" id="product" name="product">  
         <input type="text" id="origin" name="origin"> 
         <input type="text" id="best_before_date" name="best_before_date">
         <input type="number" id="amount" name="amount">
-        <input type="url" id="image" name="image" required><input type="submit" value="Submit" ></form> 
-
+        <input type="url" id="image" name="image" required=""><input type="submit" value="Submit"></form> 
+        
     </section>
-    <section>
-     
-    <ul>
+    <section id="secondsec">
+    <h1 id="workinghourstitle">Working Hours</h1>
+    <ul id="workinghours">
         <li>Monday / 9.00-18.00</li>
         <li>Tuesday / 9.00-18.00</li>
         <li>Wednesday / 9.00-18.00</li>
@@ -91,19 +90,27 @@
         
     </ul>
 
-    <ol>
+    <ol id="unordlist">
         <li>Fast delivery</li>
         <li>High Quality</li>
         <li>Variety of products</li>
         <li>Best Price</li>         
     </ol>
         
-    <h1>Where do we get our products from ?</h1>   
-    <figure>
+    <h1 id="secondh1">Where do we get our products from ?</h1>   
+    <figure id="firstfig">  
         <img src="https://statbel.fgov.be/sites/default/files/styles/news_full/public/images/landbouw/8.2%20Biologische%20landbouw/AdobeStock_200879536.jpeg?itok=9JTAiqrQ" alt="EuCt">
         <figcaption>Fig.1 - Belgian farm in Gent</figcaption>
     </figure>
-    <pre>The <abbr title="World Health Organization">WHO</abbr> has <em>awarded</em> our work <strong>3 times</strong> since 1950.</pre>
+    <pre id="preid">The <abbr title="World Health Organization">WHO</abbr> has <em>awarded</em> our work <strong>3 times</strong> since 1950.</pre>
      </section>
-</body>
-</html>
+
+
+</body></html>
+
+
+
+
+
+
+
