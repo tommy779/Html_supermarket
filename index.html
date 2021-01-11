@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en"><head>
      <meta charset="utf-8">
+     <script src="jscodes.js"></script>
+     <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
      <title>European Supermarket</title>
      <link rel="stylesheet" href="stylesheet.css">
  </head>
@@ -27,17 +32,15 @@
     </section>
     <section>
 	<h1>Product Details</h1>
-    <table>
-        <tbody><tr id="firstTR">
-            <th>Product</th>    
-            <th>Origin</th>  
-            <th>Best_Before_Day</th>  
-            <th>Amount</th>  
-            <th>Image</th>  
+    <table id="myTable">
+        <thead>
+        <tr><th onclick="sortTable(0)">Product</th><th onclick="sortTable(1)">Origin</th><th onclick="sortTable(2)">Best_Before_Day</th><th onclick="sortTable(4)">Amount</th><th>Image</th></tr>
+        </thead>
+        <tbody> 
             
         </tr>   
     
-        <tr id="secondTR">
+        <tr>
             <td>Green Apple</td>    
             <td>Belgium</td>  
             <td>20.02.2021</td>  
@@ -45,7 +48,7 @@
             <td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Apples.jpg/512px-Apples.jpg" target="_blank"> Click to view the image</a></td>  
             
         </tr>
-        <tr id="thirdTR">
+        <tr>
             <td>Orange</td>    
             <td>Germany</td>  
             <td>17.05.2021</td>  
