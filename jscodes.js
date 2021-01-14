@@ -52,3 +52,16 @@ function sortTable(n) {
       }
     }
   }
+  
+  $(document).ready(function(){
+  $('#Reset').click(function(){
+    var data = $('#text')
+  $.ajax({
+    url: 'http://wt.ops.labs.vu.nl/api21/14a10f8d/reset',
+    method: 'GET',
+    data : data
+      
+  });
+  });
+  });
+ 
